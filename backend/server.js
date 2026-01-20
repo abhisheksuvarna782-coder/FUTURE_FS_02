@@ -1,1 +1,2 @@
-// Backend entry file
+// Backend entry file for Mini CRM
+

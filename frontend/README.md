@@ -1,1 +1,1 @@
-Frontend for Mini CRM
+Frontend for Client Lead Management System (Mini CRM)
