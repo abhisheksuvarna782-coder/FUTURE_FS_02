@@ -31,9 +31,12 @@ function App() {
     <div className="app">
       <Dashboard customers={customers} loading={loading} />
       <CustomerForm onCustomerAdded={fetchCustomers} />
-      <CustomerList customers={customers} onCustomerDeleted={fetchCustomers} loading={loading} />
-      
-      {/* Footer */}
+      <CustomerList
+        customers={customers}
+        onCustomerDeleted={fetchCustomers}
+        loading={loading}
+      />
+
       <footer className="app-footer">
         Mini CRM Dashboard • Built for Internship Evaluation
       </footer>

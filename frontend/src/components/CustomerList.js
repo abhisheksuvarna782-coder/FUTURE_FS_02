@@ -12,7 +12,8 @@ const CustomerList = ({ customers, onCustomerDeleted, loading }) => {
     setDeletingId(id);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/customers/${id}`, {
+      const response = await fetch(`https://future-fs-02-vqv0.onrender.com/api/customers/${id}`, {
+
         method: 'DELETE',
       });
 
