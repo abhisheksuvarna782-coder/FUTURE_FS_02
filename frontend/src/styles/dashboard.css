@@ -1,0 +1,123 @@
+.dashboard-section {
+  margin-bottom: 3rem;
+  animation: slideUp 0.4s ease-out 0.2s backwards;
+}
+
+.dashboard-container {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.dashboard-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.stat-icon {
+  font-size: 3rem;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.stat-content h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+  letter-spacing: -1px;
+}
+
+.stat-content p {
+  color: #888;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2rem;
+}
+
+.chart-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.25s ease;
+}
+
+.chart-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.chart-box h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.chart-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  color: #666;
+  font-size: 1.05rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,132 @@
+.customer-list-section {
+  margin-bottom: 3rem;
+  animation: slideUp 0.4s ease-out 0.1s backwards;
+}
+
+.list-container {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.list-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.loading-text {
+  color: #888;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-icon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.empty-state p {
+  color: #888;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.customer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.customer-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.8rem;
+  transition: all 0.25s ease;
+  animation: slideUp 0.4s ease-out;
+}
+
+.customer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.customer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.customer-header h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.delete-btn {
+  background: rgba(255, 71, 87, 0.15);
+  color: #ff6b81;
+  border: 1.5px solid rgba(255, 71, 87, 0.3);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.delete-btn:hover {
+  background: rgba(255, 71, 87, 0.25);
+  border-color: #ff4757;
+  transform: scale(1.15);
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
+
+.customer-details p {
+  margin-bottom: 0.8rem;
+  color: #bbb;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.customer-details strong {
+  color: #ddd;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .customer-grid {
+    grid-template-columns: 1fr;
+  }
+}
