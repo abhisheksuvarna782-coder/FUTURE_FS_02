@@ -4,8 +4,6 @@ import CustomerForm from './components/CustomerForm';
 import CustomerList from './components/CustomerList';
 import './styles/app.css';
 
-const API_BASE_URL = "https://future-fs-02-vqv0.onrender.com";
-
 function App() {
   const [customers, setCustomers] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -13,7 +11,9 @@ function App() {
   const fetchCustomers = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`${API_BASE_URL}/api/customers`);
+      const response = await fetch(
+        'https://future-fs-02-vqv0.onrender.com/api/customers'
+      );
       const data = await response.json();
       setCustomers(data);
     } catch (error) {
