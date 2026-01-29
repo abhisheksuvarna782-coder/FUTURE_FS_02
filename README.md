@@ -1,4 +1,4 @@
-# Mini CRM Dashboard
+## Mini CRM Dashboard
 
 A modern, production-ready Mini CRM application built as part of the **Future Interns – Task 2** assignment.
 
