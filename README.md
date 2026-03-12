@@ -1,6 +1,6 @@
 ## Mini CRM Dashboard
 
-A modern, production-ready Mini CRM application built as part of the **Future Interns – Task 2** assignment.
+A modern, production-ready Mini CRM application built as part of the **Future Interns – Task 2** assignment
 
 ## 🚀 Live Demo
 🔗 Frontend: https://transcendent-cranachan-682e46.netlify.app/
