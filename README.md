@@ -4,6 +4,7 @@ A modern, production-ready Mini CRM application built as part of the **Future In
 
 ## 🚀 Live Demo
 🔗 Frontend: https://transcendent-cranachan-682e46.netlify.app/
+
 🔗 Backend API: https://future-fs-02-vqv0.onrender.com
 
 ---
