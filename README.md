@@ -22,7 +22,7 @@ A modern, production-ready Mini CRM application built as part of the **Future In
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack.
 
 ### Frontend
 - React (Create React App)
